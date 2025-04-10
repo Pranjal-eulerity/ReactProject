@@ -12,8 +12,9 @@ import { handleNavigation } from "./editor.util";
 import getSelectedOpbjectType from "../../../redux/actions/navigation";
 import getCanvas from "../../../redux/actions/canvas";
 import {useSelector} from 'react-redux'
+import { Calculator } from "../calculator";
 const Editor = () => {
-   
+
   const [selectedField, setSelectedField] = useState("text");
   const canvas = useSelector(state => state.canvas.canvas)
   const _D = useDispatch();
@@ -60,7 +61,7 @@ const Editor = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [canvas]);
 
-  return (
+  return (<>
     <StyleEditor>
       <Navigation setSelectedField={setSelectedField} animation={animation} />
       <Sidebar setSelectedField={setSelectedField} selectedField={selectedField} />
@@ -68,6 +69,8 @@ const Editor = () => {
       <Display canvasRefernence={ref} />
       <Footer animation={animation} setAnimation={setAnimation} />
     </StyleEditor>
+    <Calculator />
+    </>
   );
 };
 
