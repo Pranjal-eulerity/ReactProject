@@ -14,7 +14,9 @@ const Controller = ({selectedField, animation}) => {
   useLayoutEffect(() => {
      animateOnSelect("init-animation")
   }, [selectedField])
-
+  function yoyo(prams) {
+  return null;
+ }
 
   const Component = () => {
     switch(selectedField) {
