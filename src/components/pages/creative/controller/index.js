@@ -19,12 +19,12 @@ const Controller = ({selectedField, animation}) => {
     console.log("yoyoyyo");
  }, [])
  useLayoutEffect(() => {
-  console.log("yoyoyyo");
+  console.log("yoyoyyo"2);
 }, [selectedField])
 useLayoutEffect(() => {
-  console.log("yoyoyyo");
+  console.log("yoyoyyo1");
   const sum=1+2
-  console.log(sum);//sum should be 3
+  console.log(sum);//sum should be 4
   
 }, [selectedField])
 
