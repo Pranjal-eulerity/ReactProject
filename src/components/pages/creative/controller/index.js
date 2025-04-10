@@ -7,7 +7,7 @@ import  Images  from "./components/Images";
 import { animateOnSelect } from "../../../util/gsap";
 import Templates from "./components/Templates";
 import Customize from "./components/customize";
-import Graphics from "./components/graphics";
+import Graphics from "./components/Graphics";
 
 const Controller = ({selectedField, animation}) => {
 
