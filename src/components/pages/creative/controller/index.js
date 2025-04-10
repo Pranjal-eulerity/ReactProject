@@ -7,26 +7,13 @@ import  Images  from "./components/Images";
 import { animateOnSelect } from "../../../util/gsap";
 import Templates from "./components/Templates";
 import Customize from "./components/customize";
-import Graphics from "./components/graphics";
+import Graphics from "./components/Graphics";
 
 const Controller = ({selectedField, animation}) => {
 
   useLayoutEffect(() => {
      animateOnSelect("init-animation")
   }, [selectedField])
-
-  useEffect(() => {
-    console.log("yoyoyyo");
- }, [])
- useLayoutEffect(() => {
-  console.log("yoyoyyo");
-}, [selectedField])
-useLayoutEffect(() => {
-  console.log("yoyoyyo");
-  const sum=1+2
-  console.log(sum);//sum should be 3
-  
-}, [selectedField])
 
   const Component = () => {
     switch(selectedField) {
