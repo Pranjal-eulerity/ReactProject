@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 
 import { StyleController } from "./style.controller";
 
@@ -15,6 +15,18 @@ const Controller = ({selectedField, animation}) => {
      animateOnSelect("init-animation")
   }, [selectedField])
 
+  useEffect(() => {
+    console.log("yoyoyyo");
+ }, [])
+ useLayoutEffect(() => {
+  console.log("yoyoyyo");
+}, [selectedField])
+useLayoutEffect(() => {
+  console.log("yoyoyyo");
+  const sum=1+2
+  console.log(sum);//sum should be 3
+  
+}, [selectedField])
 
   const Component = () => {
     switch(selectedField) {
