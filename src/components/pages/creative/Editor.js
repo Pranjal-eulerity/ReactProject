@@ -12,11 +12,25 @@ import { handleNavigation } from "./editor.util";
 import getSelectedOpbjectType from "../../../redux/actions/navigation";
 import getCanvas from "../../../redux/actions/canvas";
 import {useSelector} from 'react-redux'
+import ButtonComponent from "../../ButtonComponent";
+import AnotherComponent from "./AnotherComponent";
 const Editor = () => {
-   
+
   const [selectedField, setSelectedField] = useState("text");
   const canvas = useSelector(state => state.canvas.canvas)
   const _D = useDispatch();
+
+  const user={
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@example.com'
+  }
+
+
+  const handleClick = () => {
+    alert('Button was clicked!');
+  };
+
 
   const ref = useFabric((fabricCanvas) => {
     // setCanavs(fabricCanvas);
@@ -67,6 +81,8 @@ const Editor = () => {
       <Controller selectedField={selectedField} setSelectedField={setSelectedField} animation={animation} />
       <Display canvasRefernence={ref} />
       <Footer animation={animation} setAnimation={setAnimation} />
+      <AnotherComponent user={user}/>
+      <ButtonComponent anotherStuff={"123"} label={123} />
     </StyleEditor>
   );
 };

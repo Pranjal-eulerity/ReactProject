@@ -1,0 +1,11 @@
+import React from 'react';
+
+const ButtonComponent = ({ anotherStuff, label }) => {
+  return (
+    <button onClick={anotherStuff}>
+      {label}
+    </button>
+  );
+};
+
+export default ButtonComponent;
