@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+//Make it a class component instead of a functional component
 export const AnotherComponent = () => {
   const [count, setCount] = useState(0);
 
@@ -14,6 +14,7 @@ export const AnotherComponent = () => {
   const increment = () => {
     setCount(count + 1);
   };
+  //Rename it to fruitItems
   const items = ['Apple', 'Banana', 'Orange', 'Mango'];
 
   return (
