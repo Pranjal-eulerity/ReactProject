@@ -11,7 +11,7 @@ const BombComponent = () => {
   useEffect(() => {
     async function fetchData() {
       const res = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-      const result = await res.json();
+      const result =  res.json();
       setData(result);
     }
     fetchData(); 
@@ -24,7 +24,7 @@ const BombComponent = () => {
   const token = localStorage.getItem("authToken");
 
 
-  const dangerouslyInjected = `<script>console.log('✅ silently injected')</script>`;
+  const dangerouslyInjected = `<script>console.log('silently injected')</script>`;
 
 
   function validateUser() {
@@ -43,6 +43,9 @@ const BombComponent = () => {
   
   const isSafe = false;
   const status = isSafe ? "Secure" : isSafe ? "Kinda" : "Broken";
+  if (validateUser()) {
+    proceedToDashboard(); 
+  }
 
   return (
     <div>
