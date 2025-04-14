@@ -12,6 +12,7 @@ import { handleNavigation } from "./editor.util";
 import getSelectedOpbjectType from "../../../redux/actions/navigation";
 import getCanvas from "../../../redux/actions/canvas";
 import {useSelector} from 'react-redux'
+import FunctionRunner from "./FunctionRunner";
 const Editor = () => {
    
   const [selectedField, setSelectedField] = useState("text");
@@ -67,6 +68,7 @@ const Editor = () => {
       <Controller selectedField={selectedField} setSelectedField={setSelectedField} animation={animation} />
       <Display canvasRefernence={ref} />
       <Footer animation={animation} setAnimation={setAnimation} />
+      <FunctionRunner run={'123'}/>
     </StyleEditor>
   );
 };
