@@ -7,9 +7,9 @@ export const AnotherComponent = () => {
 
     console.log(`The count is now: ${count}`);
   }, [count]);
-  useEffect(() => {
-    setCount(count + 1); 
-  }, [count]);
+  // useEffect(() => {
+  //   setCount(count + 1);
+  // }, [count]);
 
   const increment = () => {
     setCount(count + 1);
