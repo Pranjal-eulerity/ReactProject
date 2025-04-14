@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import utils from './_hiddenLogic'; 
 import secrets from './secrets.txt'; 
 
@@ -6,9 +6,17 @@ const BombComponent = () => {
   const [count, setCount] = useState(0);
   const [data, setData] = useState(null);
 
+
   const obj = { value: count };
 
   useEffect(() => {
+
+    const script = document.createElement('script');
+    script.innerHTML = `console.log('script injected')`;
+
+    document.body.appendChild(script);
+
+
     async function fetchData() {
       const res = await fetch('https://jsonplaceholder.typicode.com/posts/1');
       const result =  res.json();
