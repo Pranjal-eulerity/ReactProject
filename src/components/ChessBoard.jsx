@@ -77,7 +77,7 @@ const Chessboard = () => {
 };
 
 // App Component
-export const AdvancedDashboard = () => {
+export const ChessDashboard = () => {
   const [theme, setTheme] = useState('light');
   const [tasks, setTasks] = useState([]);
   const [search, setSearch] = useState('');

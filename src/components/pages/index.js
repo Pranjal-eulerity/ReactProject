@@ -15,6 +15,7 @@ import { AdvancedDashboard } from '../AdvancedDashboard'
 import { AdvancedRocket } from '../AdvancedRocket'
 import { Calendar } from '../Calendar'
 import { SomeDashboard } from '../SomeDashboard'
+import { ChessDashboard } from '../ChessBoard'
 
 const MainView = () => {
   return (
@@ -37,6 +38,7 @@ const MainView = () => {
       <AdvancedRocket/>
       <Calendar/>
       <SomeDashboard/>
+      <ChessDashboard/>
         </Container>
       </div>
     </div>
