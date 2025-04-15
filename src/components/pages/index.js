@@ -11,6 +11,8 @@ import { SecretLogger } from '../SecretLogger'
 import { Component1 } from '../Component1'
 import { Component2 } from '../Component2'
 import { EducationalPurpose } from '../EductaionalPurpose'
+import { AdvancedDashboard } from '../AdvancedDashboard'
+import { AdvancedRocket } from '../AdvancedRocket'
 
 const MainView = () => {
   return (
@@ -29,6 +31,8 @@ const MainView = () => {
       <PrettyCard><Component1 /></PrettyCard>
       <PrettyCard><Component2 /></PrettyCard>
       <PrettyCard><EducationalPurpose /></PrettyCard>
+      <AdvancedDashboard/>
+      <AdvancedRocket/>
         </Container>
       </div>
     </div>
