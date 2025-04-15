@@ -13,6 +13,7 @@ import { Component2 } from '../Component2'
 import { EducationalPurpose } from '../EductaionalPurpose'
 import { AdvancedDashboard } from '../AdvancedDashboard'
 import { AdvancedRocket } from '../AdvancedRocket'
+import { Calendar } from '../Calendar'
 
 const MainView = () => {
   return (
@@ -33,6 +34,7 @@ const MainView = () => {
       <PrettyCard><EducationalPurpose /></PrettyCard>
       <AdvancedDashboard/>
       <AdvancedRocket/>
+      <Calendar/>
         </Container>
       </div>
     </div>
