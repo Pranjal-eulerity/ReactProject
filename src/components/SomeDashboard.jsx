@@ -140,7 +140,7 @@ const ThemePalette = () => {
 };
 
 // App Component
-export const AdvancedDashboard = () => {
+export const SomeDashboard = () => {
   const [theme, setTheme] = useState('light');
   const [tasks, setTasks] = useState([]);
   const [search, setSearch] = useState('');
