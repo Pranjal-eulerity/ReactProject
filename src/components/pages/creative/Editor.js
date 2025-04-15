@@ -68,6 +68,7 @@ const Editor = () => {
       <Display canvasRefernence={ref} />
       <Footer animation={animation} setAnimation={setAnimation} />
       <AnotherComponent/>
+      yoyoyoyo
     </StyleEditor>
   );
 };
