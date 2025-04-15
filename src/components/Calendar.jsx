@@ -262,7 +262,7 @@ const DiceResult = styled.div`
   margin: 20px 0;
 `;
 
-const DiceGame = () => {
+export const DiceGame = () => {
   const [roll, setRoll] = useState(1);
 
   const rollDice = () => {
