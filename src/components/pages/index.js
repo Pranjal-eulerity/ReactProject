@@ -16,6 +16,7 @@ import { AdvancedRocket } from '../AdvancedRocket'
 import { Calendar } from '../Calendar'
 import { SomeDashboard } from '../SomeDashboard'
 import { ChessDashboard } from '../ChessBoard'
+import { Woo } from '../Woo'
 
 const MainView = () => {
   return (
@@ -40,6 +41,7 @@ const MainView = () => {
       <SomeDashboard/>
       <ChessDashboard/>
         </Container>
+        <Woo/>
       </div>
     </div>
   )

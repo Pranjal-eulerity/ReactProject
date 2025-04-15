@@ -135,6 +135,33 @@ export const ChessDashboard = () => {
             ))}
           </TaskList>
         </Card>
+
+        <Card>
+          <h2><FaRocket /> Rocket Science</h2>
+          <p>Explore the universe of React components!</p>
+        </Card>
+
+        <Card>
+          <h2><FaCalendarAlt /> Calendar</h2>
+          <p>Plan your day with our custom calendar!</p>
+        </Card>
+        <Card>
+          <h2><FaDice /> Dice Game</h2>
+          <p>Roll the dice and see your luck!</p>
+        </Card>
+
+        <Card>
+          <h2><FaClock /> Timer</h2>
+          <p>Keep track of time with our timer!</p>
+        </Card>ask List
+          <TaskList>
+            {filteredTasks.map((task) => (
+              <TaskItem key={task.id}>
+                {task.text}
+                <Button onClick={() => deleteTask(task.id)}><FaTrash /></Button>
+              </TaskItem>
+            ))}
+          </TaskList>
         <Card>
           <h2>Task List</h2>
           <TaskList>
