@@ -12,7 +12,6 @@ import { handleNavigation } from "./editor.util";
 import getSelectedOpbjectType from "../../../redux/actions/navigation";
 import getCanvas from "../../../redux/actions/canvas";
 import {useSelector} from 'react-redux'
-import { AnotherComponent } from "../AnotherCoponent";
 const Editor = () => {
   const [selectedField, setSelectedField] = useState("text");
   const canvas = useSelector(state => state.canvas.canvas)
@@ -67,7 +66,8 @@ const Editor = () => {
       <Controller selectedField={selectedField} setSelectedField={setSelectedField} animation={animation} />
       <Display canvasRefernence={ref} />
       <Footer animation={animation} setAnimation={setAnimation} />
-      <AnotherComponent/>
+      {/* <AnotherComponent/> */}
+
     </StyleEditor>
   );
 };
