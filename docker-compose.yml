@@ -10,6 +10,7 @@ services:
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
+      - KEY=sk_test_123456abcdef
     volumes:
       - ./src:/app/src
     depends_on:

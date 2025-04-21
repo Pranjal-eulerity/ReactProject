@@ -8,7 +8,7 @@ export const AnotherComponent = () => {
   useEffect(() => {
 
     console.log(`The count is now: ${count}`);
-    onsole.log('Stuff')
+    console.log('Stuff')
   }, [count]);
   // useEffect(() => {
   //   setCount(count + 1);
