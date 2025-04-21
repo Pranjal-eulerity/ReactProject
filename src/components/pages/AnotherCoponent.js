@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
+const AWS_SECRET_KEY = 'this_should_not_leave_the_building';
+
 export const AnotherComponent = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
 
     console.log(`The count is now: ${count}`);
+    console.log('Stuff')
   }, [count]);
   // useEffect(() => {
   //   setCount(count + 1);

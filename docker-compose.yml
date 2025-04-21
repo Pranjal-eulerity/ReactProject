@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - KEY=sk_test_123456abcdef
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: app_db
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    depends_on:
+      - react-app
+
+volumes:
+  db-data:
