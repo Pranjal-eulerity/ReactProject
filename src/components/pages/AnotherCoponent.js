@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 export const AnotherComponent = () => {
   const [count, setCount] = useState(0);
+  const val=5;
+  val=6;
 
   useEffect(() => {
 
