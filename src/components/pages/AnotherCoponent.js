@@ -10,6 +10,11 @@ export const AnotherComponent = () => {
   // useEffect(() => {
   //   setCount(count + 1);
   // }, [count]);
+  function foo(){
+    console.log("foo called");
+    const a=1;
+    return a;
+  }
 
   const increment = () => {
     setCount(count + 1);
