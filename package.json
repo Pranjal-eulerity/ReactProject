@@ -13,11 +13,13 @@
     "react-icons": "^4.4.0",
     "react-redux": "^8.0.2",
     "react-scripts": "5.0.1",
-    "redux": "^4.2.0",
+    "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.9",
+    "react-create-class": "^15.6.3",
     "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.5",
     "uniqid": "^5.4.0",
+    "uuid": "^1.4.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
