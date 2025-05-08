@@ -14,7 +14,7 @@ export const AnotherComponent = () => {
   const increment = () => {
     setCount(count + 1);
   };
-  const items = ['Apple', 'Banana', 'Orange', 'Mango'];
+  const items = ["Apple", 'Banana', 'Orange', 'Mango'];
 
   return (
     <div>
@@ -29,3 +29,4 @@ export const AnotherComponent = () => {
     </div>
   );
 }
+export function _calculatePrice() {}
